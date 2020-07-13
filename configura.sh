@@ -26,21 +26,11 @@ zmprov mc default zimbraFeatureMobileSyncEnabled TRUE
 zmprov mc default zimbraMobilePolicyMaxCalendarAgeFilter 0
 zmprov mc default zimbraMobilePolicyMaxEmailAgeFilter 0
 zmprov mcf zimbraMtaMaxMessageSize 52428800
-#Visualizzazione parametri
-#zmprov getConfig zimbraFileUploadMaxSize
-#zmprov getConfig zimbraImapMaxRequestSize 
-#zmprov getConfig zimbraMailContentMaxSize
-#zmprov getConfig zimbraMtaMaxMessageSize
 #Modifica parametri
 zmprov modifyConfig zimbraFileUploadMaxSize 52428800
 zmprov modifyConfig zimbraImapMaxRequestSize 52428800
-zmprov modifyConfig zimbraMailContentMaxSize 52428800
+zmprov modifyConfig zimbraMailContentMaxSize 2428800
 zmprov modifyConfig zimbraMtaMaxMessageSize 52428800
-#Controllo impostazioni
-#zmprov getConfig zimbraFileUploadMaxSize
-#zmrov getConfig zimbraImapMaxRequestSize 
-#zmprov getConfig zimbraMailContentMaxSize
-#zmprov getConfig zimbraMtaMaxMessageSize
 #Ottimizzazione IMAP
 zmprov ms `zmhostname` zimbraImapMaxConnections 500
 zmprov ms `zmhostname` zimbraImapNumThreads 500
