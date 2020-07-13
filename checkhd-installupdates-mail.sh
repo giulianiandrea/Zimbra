@@ -6,8 +6,10 @@
 
 #Path dello script e dove verranno salvati i file disco.txt e list-updates.txt
 PATHSCRIPT=/home
+#Dominio
+HOSTNAME=$(hostname -d)
 #Mittente
-MAILFROM="hw@pentaservice.it"
+MAILFROM="services@$HOSTNAME"
 #Destinatario
 MAILTO="backup.hw@pentaservice.it"
 #Limite spazio disco oltre al quale arriverà la mail di warning
