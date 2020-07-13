@@ -9,6 +9,8 @@ zxsuite core setProperty ZxCore_NTMail 'services@$DOMAIN'
 zxsuite core setProperty ZxCore_NTLevel '2'
 zxsuite core setProperty ZxCore_LicenseWarningRecipients 'services@$DOMAIN'
 zxsuite mobile setProperty ZxMobile_MaxGlobalVersion '16.1'
+#Imposta replay relay.e-mind.com 
+zmprov mcf +zimbraMtaRelayHost "relay.e-mind.com"
 #Configurazione Parametri COS
 zmprov mc default zimbraPrefShowSelectionCheckbox 'TRUE'
 zmprov mc default zimbrapreflocale 'it'
