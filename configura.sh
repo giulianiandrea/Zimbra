@@ -2,6 +2,7 @@ DOMAIN=$(hostname -d)
 zmprov cdl services@$DOMAIN
 zmprov adlm services@$DOMAIN backup.hw@pentaservice.it
 zmprov adlm services@$DOMAIN andrea.giuliani@pentaservice.it
+zmprov adlm services@$DOMAIN stefano.tozzi@pentaservice.it
 zxsuite backup setProperty ZxBackup_DestPath /zimbrabackup/
 zxsuite backup setProperty ZxBackup_DatadRetentionDays 180
 zxsuite core setProperty ZxCore_NTMail services@$DOMAIN
